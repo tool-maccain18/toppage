@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Learning Tools</title>
+
+  <style>
+    :root {
+      --bg:#0b1220;
+      --card:#121b2f;
+      --border:rgba(255,255,255,.08);
+      --text:#e5e7eb;
+      --muted:#9ca3af;
+    }
+
+    * { box-sizing:border-box; }
+
+    body {
+      margin:0;
+      font-family: system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .wrap {
+      max-width:900px;
+      margin:0 auto;
+      padding:24px 20px 40px;
+    }
+
+    h1 {
+      font-size:22px;
+      font-weight:600;
+      margin-bottom:6px;
+    }
+
+    .sub {
+      font-size:13px;
+      color:var(--muted);
+      margin-bottom:26px;
+    }
+
+    section {
+      margin-bottom:32px;
+    }
+
+    h2 {
+      font-size:16px;
+      margin-bottom:12px;
+      color:#dbeafe;
+      display:flex;
+      align-items:center;
+      gap:8px;
+    }
+
+    .grid {
+      display:grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px,1fr));
+      gap:14px;
+    }
+
+    a.card {
+      text-decoration:none;
+      color:var(--text);
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:16px;
+      background:var(--card);
+      display:flex;
+      gap:14px;
+      align-items:flex-start;
+      transition: background .15s, border-color .15s, transform .05s;
+    }
+
+    a.card:hover {
+      background:rgba(255,255,255,.05);
+      border-color:rgba(255,255,255,.16);
+      transform: translateY(-1px);
+    }
+
+    .emoji {
+      font-family:
+        "Segoe UI Emoji",
+        "Apple Color Emoji",
+        "Noto Color Emoji",
+        system-ui,
+        sans-serif;
+      font-size:28px;
+      line-height:1;
+      opacity:.9;
+      flex-shrink:0;
+    }
+
+    .title {
+      font-size:15px;
+      font-weight:600;
+      margin-bottom:4px;
+    }
+
+    .desc {
+      font-size:12px;
+      color:var(--muted);
+      line-height:1.45;
+    }
+
+    footer {
+      margin-top:40px;
+      font-size:12px;
+      color:var(--muted);
+      text-align:right;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <h1>Learning Tools</h1>
+    <div class="sub">
+      Small, focused tools for everyday practice and casual learning.
+    </div>
+
+    <!-- English -->
+    <section>
+      <h2>📘 English</h2>
+      <div class="grid">
+        <a class="card" href="./wordrepeater/">
+          <div class="emoji">🔁</div>
+          <div>
+            <div class="title">Word Repeater for New Vocabulary</div>
+            <div class="desc">
+              A simple companion tool for learning new English words, with UK English pronunciation.
+            </div>
+          </div>
+        </a>
+
+        <a class="card" href="./sats-spelling/">
+          <div class="emoji">✍️</div>
+          <div>
+            <div class="title">SATs Spelling Practice</div>
+            <div class="desc">
+              Spelling practice and testing based on the UK SATs exam format.
+            </div>
+          </div>
+        </a>
+
+        <a class="card" href="./reading-aloud/">
+          <div class="emoji">🔊</div>
+          <div>
+            <div class="title">Read Aloud</div>
+            <div class="desc">
+              An English read‑aloud tool with selectable voices (UK, US) and sentence‑by‑sentence replay.
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Abacus -->
+    <section>
+      <h2>🧮 Abacus</h2>
+      <div class="grid">
+        <a class="card" href="./soroban_yomiage_2/">
+          <div class="emoji">🎧</div>
+          <div>
+            <div class="title">Abacus Listening Exercises</div>
+            <div class="desc">
+              Listening‑based arithmetic exercises with adjustable speed and timing controls.
+            </div>
+          </div>
+        </a>
+
+        <a class="card" href="./soroban_yomiage_review/">
+          <div class="emoji">🔄</div>
+          <div>
+            <div class="title">Abacus Listening Review</div>
+            <div class="desc">
+              Review, repeat, and retry previously generated listening exercises.
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Geography -->
+    <section>
+      <h2>🌍 Geography</h2>
+      <div class="grid">
+        <a class="card" href="./intercity_distance_quiz/">
+          <div class="emoji">📏</div>
+          <div>
+            <div class="title">Europe Distance Quiz</div>
+            <div class="desc">
+              Compare distances between European cities.
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      © Personal learning tools
+    </footer>
+  </div>
+</body>
+</html>
